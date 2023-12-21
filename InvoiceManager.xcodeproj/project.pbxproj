@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		716A15562B32C45D009F4719 /* InvoiceManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716A15552B32C45D009F4719 /* InvoiceManagerApp.swift */; };
-		716A15582B32C45D009F4719 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716A15572B32C45D009F4719 /* ContentView.swift */; };
+		716A15582B32C45D009F4719 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716A15572B32C45D009F4719 /* MainView.swift */; };
 		716A155A2B32C45E009F4719 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 716A15592B32C45E009F4719 /* Assets.xcassets */; };
 		716A155E2B32C45E009F4719 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 716A155D2B32C45E009F4719 /* Preview Assets.xcassets */; };
 		716A15682B32C45E009F4719 /* InvoiceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716A15672B32C45E009F4719 /* InvoiceManagerTests.swift */; };
@@ -19,6 +19,21 @@
 		716A15862B32C4FA009F4719 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 716A15852B32C4FA009F4719 /* FirebaseFirestore */; };
 		716A15882B32C4FA009F4719 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 716A15872B32C4FA009F4719 /* FirebaseFirestoreSwift */; };
 		716A158A2B32C5B9009F4719 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 716A15892B32C5B9009F4719 /* GoogleService-Info.plist */; };
+		B2A685F42B341AA10027E32C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A685F32B341AA10027E32C /* ProfileView.swift */; };
+		B2A685F62B341AC60027E32C /* InvoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A685F52B341AC60027E32C /* InvoiceView.swift */; };
+		B2A685F82B341AE00027E32C /* NewInvoiceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A685F72B341AE00027E32C /* NewInvoiceItemView.swift */; };
+		B2A685FA2B341B080027E32C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A685F92B341B080027E32C /* LoginView.swift */; };
+		B2A685FC2B341B110027E32C /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A685FB2B341B110027E32C /* SignUpView.swift */; };
+		B2A685FE2B341B4E0027E32C /* InvoiceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A685FD2B341B4E0027E32C /* InvoiceItemView.swift */; };
+		B2A686002B341BC70027E32C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A685FF2B341BC70027E32C /* User.swift */; };
+		B2A686022B341BD90027E32C /* InvoiceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A686012B341BD90027E32C /* InvoiceItem.swift */; };
+		B2A686042B341C200027E32C /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A686032B341C200027E32C /* MainViewViewModel.swift */; };
+		B2A686062B341C2A0027E32C /* ProfileViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A686052B341C2A0027E32C /* ProfileViewViewModel.swift */; };
+		B2A686082B341C370027E32C /* InvoiceViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A686072B341C370027E32C /* InvoiceViewViewModel.swift */; };
+		B2A6860A2B341C490027E32C /* NewInvoiceItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A686092B341C490027E32C /* NewInvoiceItemViewViewModel.swift */; };
+		B2A6860C2B341C570027E32C /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6860B2B341C570027E32C /* LoginViewViewModel.swift */; };
+		B2A6860E2B341C690027E32C /* SignUpViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6860D2B341C690027E32C /* SignUpViewViewModel.swift */; };
+		B2A686102B341C7F0027E32C /* InvoiceItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6860F2B341C7F0027E32C /* InvoiceItemViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +56,7 @@
 /* Begin PBXFileReference section */
 		716A15522B32C45D009F4719 /* InvoiceManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvoiceManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		716A15552B32C45D009F4719 /* InvoiceManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceManagerApp.swift; sourceTree = "<group>"; };
-		716A15572B32C45D009F4719 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		716A15572B32C45D009F4719 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		716A15592B32C45E009F4719 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		716A155B2B32C45E009F4719 /* InvoiceManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InvoiceManager.entitlements; sourceTree = "<group>"; };
 		716A155D2B32C45E009F4719 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -51,6 +66,21 @@
 		716A15712B32C45E009F4719 /* InvoiceManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceManagerUITests.swift; sourceTree = "<group>"; };
 		716A15732B32C45E009F4719 /* InvoiceManagerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceManagerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		716A15892B32C5B9009F4719 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B2A685F32B341AA10027E32C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B2A685F52B341AC60027E32C /* InvoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceView.swift; sourceTree = "<group>"; };
+		B2A685F72B341AE00027E32C /* NewInvoiceItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInvoiceItemView.swift; sourceTree = "<group>"; };
+		B2A685F92B341B080027E32C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B2A685FB2B341B110027E32C /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		B2A685FD2B341B4E0027E32C /* InvoiceItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceItemView.swift; sourceTree = "<group>"; };
+		B2A685FF2B341BC70027E32C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = InvoiceManager/Views/User.swift; sourceTree = SOURCE_ROOT; };
+		B2A686012B341BD90027E32C /* InvoiceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InvoiceItem.swift; path = InvoiceManager/Views/InvoiceItem.swift; sourceTree = SOURCE_ROOT; };
+		B2A686032B341C200027E32C /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewViewModel.swift; path = InvoiceManager/Views/MainViewViewModel.swift; sourceTree = SOURCE_ROOT; };
+		B2A686052B341C2A0027E32C /* ProfileViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewViewModel.swift; path = InvoiceManager/Views/ProfileViewViewModel.swift; sourceTree = SOURCE_ROOT; };
+		B2A686072B341C370027E32C /* InvoiceViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InvoiceViewViewModel.swift; path = InvoiceManager/Views/InvoiceViewViewModel.swift; sourceTree = SOURCE_ROOT; };
+		B2A686092B341C490027E32C /* NewInvoiceItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewInvoiceItemViewViewModel.swift; path = InvoiceManager/Views/NewInvoiceItemViewViewModel.swift; sourceTree = SOURCE_ROOT; };
+		B2A6860B2B341C570027E32C /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewViewModel.swift; path = InvoiceManager/Views/LoginViewViewModel.swift; sourceTree = SOURCE_ROOT; };
+		B2A6860D2B341C690027E32C /* SignUpViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpViewViewModel.swift; path = InvoiceManager/Views/SignUpViewViewModel.swift; sourceTree = SOURCE_ROOT; };
+		B2A6860F2B341C7F0027E32C /* InvoiceItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InvoiceItemViewViewModel.swift; path = InvoiceManager/Views/InvoiceItemViewViewModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +173,8 @@
 		716A158B2B32C7EF009F4719 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B2A685FF2B341BC70027E32C /* User.swift */,
+				B2A686012B341BD90027E32C /* InvoiceItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -150,6 +182,13 @@
 		716A158C2B32C81A009F4719 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B2A686032B341C200027E32C /* MainViewViewModel.swift */,
+				B2A686052B341C2A0027E32C /* ProfileViewViewModel.swift */,
+				B2A686072B341C370027E32C /* InvoiceViewViewModel.swift */,
+				B2A686092B341C490027E32C /* NewInvoiceItemViewViewModel.swift */,
+				B2A6860B2B341C570027E32C /* LoginViewViewModel.swift */,
+				B2A6860D2B341C690027E32C /* SignUpViewViewModel.swift */,
+				B2A6860F2B341C7F0027E32C /* InvoiceItemViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -157,7 +196,13 @@
 		716A158D2B32C821009F4719 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				716A15572B32C45D009F4719 /* ContentView.swift */,
+				716A15572B32C45D009F4719 /* MainView.swift */,
+				B2A685F32B341AA10027E32C /* ProfileView.swift */,
+				B2A685F52B341AC60027E32C /* InvoiceView.swift */,
+				B2A685F72B341AE00027E32C /* NewInvoiceItemView.swift */,
+				B2A685F92B341B080027E32C /* LoginView.swift */,
+				B2A685FB2B341B110027E32C /* SignUpView.swift */,
+				B2A685FD2B341B4E0027E32C /* InvoiceItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -246,6 +291,7 @@
 				TargetAttributes = {
 					716A15512B32C45D009F4719 = {
 						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1420;
 					};
 					716A15622B32C45E009F4719 = {
 						CreatedOnToolsVersion = 15.1;
@@ -312,8 +358,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				716A15582B32C45D009F4719 /* ContentView.swift in Sources */,
+				B2A685FA2B341B080027E32C /* LoginView.swift in Sources */,
+				B2A6860E2B341C690027E32C /* SignUpViewViewModel.swift in Sources */,
+				716A15582B32C45D009F4719 /* MainView.swift in Sources */,
+				B2A686042B341C200027E32C /* MainViewViewModel.swift in Sources */,
+				B2A6860A2B341C490027E32C /* NewInvoiceItemViewViewModel.swift in Sources */,
+				B2A685F42B341AA10027E32C /* ProfileView.swift in Sources */,
+				B2A685FC2B341B110027E32C /* SignUpView.swift in Sources */,
+				B2A686062B341C2A0027E32C /* ProfileViewViewModel.swift in Sources */,
 				716A15562B32C45D009F4719 /* InvoiceManagerApp.swift in Sources */,
+				B2A686002B341BC70027E32C /* User.swift in Sources */,
+				B2A686022B341BD90027E32C /* InvoiceItem.swift in Sources */,
+				B2A6860C2B341C570027E32C /* LoginViewViewModel.swift in Sources */,
+				B2A686082B341C370027E32C /* InvoiceViewViewModel.swift in Sources */,
+				B2A686102B341C7F0027E32C /* InvoiceItemViewViewModel.swift in Sources */,
+				B2A685F62B341AC60027E32C /* InvoiceView.swift in Sources */,
+				B2A685F82B341AE00027E32C /* NewInvoiceItemView.swift in Sources */,
+				B2A685FE2B341B4E0027E32C /* InvoiceItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +530,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = InvoiceManager/InvoiceManager.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -485,7 +547,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.4;
@@ -495,6 +557,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -505,6 +568,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = InvoiceManager/InvoiceManager.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -521,7 +585,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.4;
