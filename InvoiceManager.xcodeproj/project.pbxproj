@@ -34,6 +34,7 @@
 		B2A6860C2B341C570027E32C /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6860B2B341C570027E32C /* LoginViewViewModel.swift */; };
 		B2A6860E2B341C690027E32C /* SignUpViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6860D2B341C690027E32C /* SignUpViewViewModel.swift */; };
 		B2A686102B341C7F0027E32C /* InvoiceItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6860F2B341C7F0027E32C /* InvoiceItemViewViewModel.swift */; };
+		B2A686152B3424710027E32C /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A686142B3424710027E32C /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		B2A6860B2B341C570027E32C /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewViewModel.swift; path = InvoiceManager/Views/LoginViewViewModel.swift; sourceTree = SOURCE_ROOT; };
 		B2A6860D2B341C690027E32C /* SignUpViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpViewViewModel.swift; path = InvoiceManager/Views/SignUpViewViewModel.swift; sourceTree = SOURCE_ROOT; };
 		B2A6860F2B341C7F0027E32C /* InvoiceItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InvoiceItemViewViewModel.swift; path = InvoiceManager/Views/InvoiceItemViewViewModel.swift; sourceTree = SOURCE_ROOT; };
+		B2A686142B3424710027E32C /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 				B2A685F92B341B080027E32C /* LoginView.swift */,
 				B2A685FB2B341B110027E32C /* SignUpView.swift */,
 				B2A685FD2B341B4E0027E32C /* InvoiceItemView.swift */,
+				B2A686142B3424710027E32C /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2A685FA2B341B080027E32C /* LoginView.swift in Sources */,
+				B2A686152B3424710027E32C /* HeaderView.swift in Sources */,
 				B2A6860E2B341C690027E32C /* SignUpViewViewModel.swift in Sources */,
 				716A15582B32C45D009F4719 /* MainView.swift in Sources */,
 				B2A686042B341C200027E32C /* MainViewViewModel.swift in Sources */,
