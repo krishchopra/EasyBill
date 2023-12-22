@@ -8,16 +8,56 @@
 import SwiftUI
 
 struct LoginView: View {
+    
+    @State var email = ""
+    @State var password = ""
+    
     var body: some View {
-        VStack {
-            // Header
-            HeaderView()
-            
-            // Login Form
-            
-            // Create Accoun t / Sign Up
-            
-            Spacer()
+        NavigationStack {
+            VStack {
+                // Header
+                HeaderView()
+                
+                // Login Form
+                Form {
+                    TextField("email", text: $email)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .font(.custom("Avenir", size: 18))
+                        .padding(.all, 2)
+                    SecureField("password", text: $password)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .font(.custom("Avenir", size: 18))
+                        .padding(.all, 2)
+                        .padding(.bottom, 10)
+                    
+                    Button {
+                        // user will attempt to login upon click
+                    } label: {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 50)
+                                .foregroundColor(Color.indigo)
+                            Text("login")
+                                .bold()
+                                .foregroundColor(Color.white)
+                                .font(.custom("Avenir", size: 18))
+                        }
+                    }
+                }
+                .scrollContentBackground(.hidden)
+                .padding(.top, 8)
+                
+                // Create Account / Sign Up
+                VStack {
+                    Text("don't have an account?")
+                        .font(.custom("Avenir", size: 18))
+                    NavigationLink(destination: SignUpView(), label: {
+                        Text("sign up here")
+                            .font(.custom("Avenir", size: 18))
+                            .underline()
+                    })
+                }
+                Spacer()
+            }
         }
     }
 }
