@@ -21,14 +21,13 @@ struct LoginView: View {
                 // Login Form
                 Form {
                     TextField("email", text: $email)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .textFieldStyle(DefaultTextFieldStyle())
                         .font(.custom("Avenir", size: 18))
                         .padding(.all, 2)
                     SecureField("password", text: $password)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .textFieldStyle(DefaultTextFieldStyle())
                         .font(.custom("Avenir", size: 18))
                         .padding(.all, 2)
-                        .padding(.bottom, 10)
                     
                     Button {
                         // user will attempt to login upon click
@@ -42,6 +41,7 @@ struct LoginView: View {
                                 .font(.custom("Avenir", size: 18))
                         }
                     }
+                    .padding(.top)
                 }
                 .scrollContentBackground(.hidden)
                 .padding(.top, 8)
