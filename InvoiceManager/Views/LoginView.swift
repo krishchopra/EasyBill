@@ -16,7 +16,10 @@ struct LoginView: View {
         NavigationStack {
             VStack {
                 // Header
-                HeaderView()
+                HeaderView(title: "easybill",
+                           subtitle: "track invoices with ease",
+                           angle: 20,
+                           background: .indigo)
                 
                 // Login Form
                 Form {

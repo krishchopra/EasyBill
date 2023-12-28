@@ -8,8 +8,52 @@
 import SwiftUI
 
 struct SignUpView: View {
+    
+    @State var name = ""
+    @State var email = ""
+    @State var password = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HeaderView(title: "register",
+                       subtitle: "begin your easybill journey...",
+                       angle: -20,
+                       background: .teal)
+            .padding(.top, 8)
+            
+            Form {
+                TextField("name", text: $email)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                    .font(.custom("Avenir", size: 18))
+                    .padding(.all, 2)
+                TextField("email", text: $email)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                    .font(.custom("Avenir", size: 18))
+                    .padding(.all, 2)
+                SecureField("password", text: $password)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                    .font(.custom("Avenir", size: 18))
+                    .padding(.all, 2)
+                
+                Button {
+                    // user will attempt to login upon click
+                } label: {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 50)
+                            .foregroundColor(Color.mint)
+                        Text("sign up")
+                            .bold()
+                            .foregroundColor(Color.white)
+                            .font(.custom("Avenir", size: 18))
+                    }
+                }
+                .padding(.top)
+            }
+            .scrollContentBackground(.hidden)
+            .padding(.top, 8)
+            
+            Spacer()
+        }
     }
 }
 
