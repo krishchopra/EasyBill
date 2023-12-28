@@ -20,9 +20,10 @@ struct SignUpView: View {
                        angle: -20,
                        background: .teal)
             .padding(.top, 8)
+            .offset(y: -20)
             
             Form {
-                TextField("name", text: $email)
+                TextField("full name", text: $email)
                     .textFieldStyle(DefaultTextFieldStyle())
                     .font(.custom("Avenir", size: 18))
                     .padding(.all, 2)
