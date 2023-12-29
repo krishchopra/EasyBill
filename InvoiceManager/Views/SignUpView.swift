@@ -16,19 +16,23 @@ struct SignUpView: View {
     var body: some View {
         VStack {
             HeaderView(title: "register",
-                       subtitle: "begin your easybill journey...",
+                       subtitle: "begin your easybill journey",
                        angle: -20,
                        background: .teal)
             .padding(.top, 8)
             .offset(y: -20)
             
             Form {
-                TextField("full name", text: $email)
+                TextField("full name", text: $name)
                     .textFieldStyle(DefaultTextFieldStyle())
+                    .autocorrectionDisabled()
+                    .autocapitalization(.none)
                     .font(.custom("Avenir", size: 18))
                     .padding(.all, 2)
                 TextField("email", text: $email)
                     .textFieldStyle(DefaultTextFieldStyle())
+                    .autocorrectionDisabled()
+                    .autocapitalization(.none)
                     .font(.custom("Avenir", size: 18))
                     .padding(.all, 2)
                 SecureField("password", text: $password)
