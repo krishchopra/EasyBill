@@ -9,9 +9,7 @@ import SwiftUI
 
 struct SignUpView: View {
     
-    @State var name = ""
-    @State var email = ""
-    @State var password = ""
+    @StateObject var viewModel = SignUpViewViewModel()
     
     var body: some View {
         VStack {
@@ -23,25 +21,25 @@ struct SignUpView: View {
             .offset(y: -20)
             
             Form {
-                TextField("full name", text: $name)
+                TextField("full name", text: $viewModel.name)
                     .textFieldStyle(DefaultTextFieldStyle())
                     .autocorrectionDisabled()
                     .autocapitalization(.none)
                     .font(.custom("Avenir", size: 18))
                     .padding(.all, 2)
-                TextField("email", text: $email)
+                TextField("email", text: $viewModel.email)
                     .textFieldStyle(DefaultTextFieldStyle())
                     .autocorrectionDisabled()
                     .autocapitalization(.none)
                     .font(.custom("Avenir", size: 18))
                     .padding(.all, 2)
-                SecureField("password", text: $password)
+                SecureField("password", text: $viewModel.password)
                     .textFieldStyle(DefaultTextFieldStyle())
                     .font(.custom("Avenir", size: 18))
                     .padding(.all, 2)
                 
                 Button {
-                    // user will attempt to login upon click
+                    viewModel.register()
                 } label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 50)

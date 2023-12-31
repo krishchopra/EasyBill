@@ -13,7 +13,7 @@ class LoginViewViewModel: ObservableObject {
     @Published var password = ""
     @Published var errorMessage = ""
     
-    init() {
+    init() { 
         
     }
     
@@ -22,7 +22,8 @@ class LoginViewViewModel: ObservableObject {
             return
         }
         
-        // Actually log user in using firebase
+        // Attempt to log user in using firebase
+        Auth.auth().signIn(withEmail: email, password: password)
     }
     
     private func validate() -> Bool {

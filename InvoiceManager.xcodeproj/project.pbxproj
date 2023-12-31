@@ -19,6 +19,7 @@
 		716A15862B32C4FA009F4719 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 716A15852B32C4FA009F4719 /* FirebaseFirestore */; };
 		716A15882B32C4FA009F4719 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 716A15872B32C4FA009F4719 /* FirebaseFirestoreSwift */; };
 		716A158A2B32C5B9009F4719 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 716A15892B32C5B9009F4719 /* GoogleService-Info.plist */; };
+		71F7B71C2B40F25200D9BFF7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F7B71B2B40F25200D9BFF7 /* Extensions.swift */; };
 		B2A685F42B341AA10027E32C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A685F32B341AA10027E32C /* ProfileView.swift */; };
 		B2A685F62B341AC60027E32C /* InvoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A685F52B341AC60027E32C /* InvoiceView.swift */; };
 		B2A685F82B341AE00027E32C /* NewInvoiceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A685F72B341AE00027E32C /* NewInvoiceItemView.swift */; };
@@ -67,6 +68,7 @@
 		716A15712B32C45E009F4719 /* InvoiceManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceManagerUITests.swift; sourceTree = "<group>"; };
 		716A15732B32C45E009F4719 /* InvoiceManagerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceManagerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		716A15892B32C5B9009F4719 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		71F7B71B2B40F25200D9BFF7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B2A685F32B341AA10027E32C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		B2A685F52B341AC60027E32C /* InvoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceView.swift; sourceTree = "<group>"; };
 		B2A685F72B341AE00027E32C /* NewInvoiceItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInvoiceItemView.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				716A15592B32C45E009F4719 /* Assets.xcassets */,
 				716A15552B32C45D009F4719 /* InvoiceManagerApp.swift */,
 				716A15892B32C5B9009F4719 /* GoogleService-Info.plist */,
+				71F7B71B2B40F25200D9BFF7 /* Extensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				B2A686042B341C200027E32C /* MainViewViewModel.swift in Sources */,
 				B2A6860A2B341C490027E32C /* NewInvoiceItemViewViewModel.swift in Sources */,
 				B2A685F42B341AA10027E32C /* ProfileView.swift in Sources */,
+				71F7B71C2B40F25200D9BFF7 /* Extensions.swift in Sources */,
 				B2A685FC2B341B110027E32C /* SignUpView.swift in Sources */,
 				B2A686062B341C2A0027E32C /* ProfileViewViewModel.swift in Sources */,
 				716A15562B32C45D009F4719 /* InvoiceManagerApp.swift in Sources */,
