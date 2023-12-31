@@ -13,10 +13,24 @@ struct MainView: View {
     var body: some View {
         if viewModel.isSignedIn && !viewModel.currUserID.isEmpty {
             // display signed in view
-            InvoiceView()
+            accountView
         } else {
             // display login view
             LoginView()
+        }
+    }
+    
+    @ViewBuilder
+    var accountView: some View {
+        TabView {
+            InvoiceView(userID: viewModel.currUserID)
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+            ProfileView()
+                .tabItem {
+                    Label("Profile", systemImage: "person.circle")
+                }
         }
     }
 }

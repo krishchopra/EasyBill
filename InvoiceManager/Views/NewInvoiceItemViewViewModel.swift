@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+/// ViewModel for single invoice item view (each row in list of invoice items)
+/// Primary tab
+class NewInvoiceItemViewViewModel: ObservableObject {
+    init() {
+        
+    }
+}

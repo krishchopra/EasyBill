@@ -9,11 +9,13 @@ import Foundation
 import FirebaseAuth
 
 class MainViewViewModel: ObservableObject {
+    typealias FirebaseAuthModule = FirebaseAuth.Auth
+    
     @Published var currUserID: String = ""
-    private var handler: AuthStateDidChangeListenerHandle?
+    private var handler: FirebaseAuth.AuthStateDidChangeListenerHandle?
     
     init() {
-        self.handler = Auth.auth().addStateDidChangeListener { [weak self] _, user in
+        self.handler = FirebaseAuthModule.auth().addStateDidChangeListener { [weak self] _, user in
             DispatchQueue.main.async {
                 self?.currUserID = user?.uid ?? ""
             }
@@ -21,6 +23,6 @@ class MainViewViewModel: ObservableObject {
     }
     
     public var isSignedIn: Bool {
-        return Auth.auth().currentUser != nil
+        return FirebaseAuthModule.auth().currentUser != nil
     }
 }

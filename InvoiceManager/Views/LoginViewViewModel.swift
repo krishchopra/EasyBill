@@ -9,6 +9,8 @@ import Foundation
 import FirebaseAuth
 
 class LoginViewViewModel: ObservableObject {
+    typealias FirebaseAuthModule = FirebaseAuth.Auth
+    
     @Published var email = ""
     @Published var password = ""
     @Published var errorMessage = ""
@@ -21,9 +23,8 @@ class LoginViewViewModel: ObservableObject {
         guard validate() else {
             return
         }
-        
         // Attempt to log user in using firebase
-        Auth.auth().signIn(withEmail: email, password: password)
+        FirebaseAuthModule.auth().signIn(withEmail: email, password: password)
     }
     
     private func validate() -> Bool {

@@ -8,13 +8,33 @@
 import SwiftUI
 
 struct InvoiceView: View {
+    @StateObject var viewModel = InvoiceViewViewModel()
+    
+    private let userID: String
+    
+    init(userID: String) {
+        self.userID = userID
+    }
+    
     var body: some View {
-        Text("Welcome! You are successfully signed in.")
+        NavigationView {
+            VStack {
+                
+            }
+            .navigationTitle("Expense List")
+            .toolbar {
+                Button {
+                    // activates some action
+                } label: {
+                    Image(systemName: "plus")
+                }
+            }
+        }
     }
 }
 
 struct InvoiceView_Previews: PreviewProvider {
     static var previews: some View {
-        InvoiceView()
+        InvoiceView(userID: "")
     }
 }
