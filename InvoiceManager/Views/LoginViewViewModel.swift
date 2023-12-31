@@ -1,21 +1,12 @@
-//
-//  LoginViewViewModel.swift
-//  InvoiceManager
-//
-//  Created by Parth Chopra on 12/21/23.
-//
-
 import Foundation
 import FirebaseAuth
 
 class LoginViewViewModel: ObservableObject {
-    typealias FirebaseAuthModule = FirebaseAuth.Auth
-    
     @Published var email = ""
     @Published var password = ""
     @Published var errorMessage = ""
     
-    init() { 
+    init() {
         
     }
     
@@ -23,8 +14,15 @@ class LoginViewViewModel: ObservableObject {
         guard validate() else {
             return
         }
-        // Attempt to log user in using firebase
-        FirebaseAuthModule.auth().signIn(withEmail: email, password: password)
+        
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
+            DispatchQueue.main.async {
+                if error != nil {
+                    // Handle the error - for example, show it in a UI element
+                    self?.errorMessage = "Invalid login credentials."
+                }
+            }
+        }
     }
     
     private func validate() -> Bool {
@@ -32,11 +30,11 @@ class LoginViewViewModel: ObservableObject {
         errorMessage = ""
         guard !email.trimmingCharacters(in: .whitespaces).isEmpty,
               !password.trimmingCharacters(in: .whitespaces).isEmpty else {
-            errorMessage = "Please fill in all fields!"
+            errorMessage = "Please fill in all fields."
             return false
         }
         guard email.contains("@") && email.contains(".") else {
-            errorMessage = "Please enter a valid email!"
+            errorMessage = "Please enter a valid email."
             return false
         }
         return true

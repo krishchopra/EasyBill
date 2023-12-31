@@ -33,9 +33,9 @@ class SignUpViewViewModel: ObservableObject {
     }
     
     private func insertUserRecord(id: String) {
-        let newUser = User(id: id, 
+        let newUser = User(id: id,
                            name: name,
-                           email: email, 
+                           email: email,
                            joined: Date().timeIntervalSince1970)
         
         let database = Firestore.firestore()
