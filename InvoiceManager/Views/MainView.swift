@@ -11,7 +11,7 @@ struct MainView: View {
     @StateObject var viewModel = MainViewViewModel()
     
     var body: some View {
-        if viewModel.isSignedIn, !viewModel.currUserID.isEmpty {
+        if viewModel.isSignedIn && !viewModel.currUserID.isEmpty {
             // display signed in view
             InvoiceView()
         } else {
