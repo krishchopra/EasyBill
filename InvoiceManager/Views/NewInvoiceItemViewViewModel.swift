@@ -16,8 +16,25 @@ class NewInvoiceItemViewViewModel: ObservableObject {
     @Published var date = Date()
     @Published var price: Double?
     @Published var numPeople: Int?
+    @Published var showAlert = false
     
     init() {
         
+    }
+    
+    func save() {
+        
+    }
+    
+    var canSave: Bool {
+        guard !title.trimmingCharacters(in: .whitespaces).isEmpty, !(price == nil), !(numPeople == nil) else {
+            return false
+        }
+        
+        guard date <= Date().addingTimeInterval(86400) else {
+            return false
+        }
+        
+        return true
     }
 }

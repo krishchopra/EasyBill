@@ -9,12 +9,14 @@ import SwiftUI
 
 struct NewInvoiceItemView: View {
     @StateObject var viewModel = NewInvoiceItemViewViewModel()
+    @Binding var newInvoiceItemPresented: Bool
     
     var body: some View {
         VStack {
-            Text("new invoice")
+            Text("new expense")
                 .font(.custom("Avenir", size: 32))
                 .bold()
+                .padding(.top)
             // New invoice form
             Form {
                 // Title
@@ -42,18 +44,48 @@ struct NewInvoiceItemView: View {
                 .font(.custom("Avenir", size: 18))
                 .foregroundColor(.gray.opacity(0.6))
                 // Price
-                TextField("price", value: $viewModel.price, formatter: NumberFormatter())
+                TextField("price ($)", value: $viewModel.price, format: .number)
                     .keyboardType(.decimalPad)
+                    .font(.custom("Avenir", size: 18))
                 // Num People
-                TextField("num. people", value: $viewModel.numPeople, formatter: NumberFormatter())
+                TextField("num. of people", value: $viewModel.numPeople, format: .number)
                     .keyboardType(.numberPad)
+                    .font(.custom("Avenir", size: 18))
+                // Save Button
+                Button {
+                    if viewModel.canSave {
+                        viewModel.save()
+                        newInvoiceItemPresented = false
+                    } else {
+                        viewModel.showAlert = true
+                    }
+                } label: {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 50)
+                            .foregroundColor(Color.teal)
+                        Text("save")
+                            .bold()
+                            .foregroundColor(Color.white)
+                            .font(.custom("Avenir", size: 18))
+                    }
+                }
+                .padding(.all)
             }
+            .alert(isPresented: $viewModel.showAlert, content: {
+                Alert(
+                    title: Text("Error"),
+                    message: Text("Please fill in title, price, and number of people — and ensure that the date is today or in the past.")
+                )
+            })
         }
     }
 }
 
 struct NewInvoiceItemView_Previews: PreviewProvider {
     static var previews: some View {
-        NewInvoiceItemView()
+        NewInvoiceItemView(newInvoiceItemPresented: Binding(get: {
+            return true
+        }, set: { _ in
+        }))
     }
 }

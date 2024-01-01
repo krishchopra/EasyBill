@@ -8,6 +8,8 @@
 import Foundation
 
 class InvoiceViewViewModel: ObservableObject {
+    @Published var showingNewInvoiceItemView = false
+    
     init() {
         
     }

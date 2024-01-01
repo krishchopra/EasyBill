@@ -24,11 +24,15 @@ struct InvoiceView: View {
             .navigationTitle("Expense List")
             .toolbar {
                 Button {
-                    // activates some action
+                    viewModel.showingNewInvoiceItemView = true
                 } label: {
                     Image(systemName: "plus")
                 }
             }
+            .sheet(isPresented: $viewModel.showingNewInvoiceItemView, content: {
+                NewInvoiceItemView(newInvoiceItemPresented: 
+                                    $viewModel.showingNewInvoiceItemView)
+            })
         }
     }
 }
