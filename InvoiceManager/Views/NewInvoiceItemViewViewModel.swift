@@ -6,13 +6,16 @@
 //
 
 import Foundation
+import FirebaseAuth
+import FirebaseFirestore
 
 /// ViewModel for single invoice item view (each row in list of invoice items)
 /// Primary tab
 class NewInvoiceItemViewViewModel: ObservableObject {
     @Published var title = ""
     @Published var description = ""
-    @Published var tag = "" // "Food", "Entertainment", "Travel", etc
+    // NOTE: Add a default here since the Picker component gets upset otherwise and throws an error
+    @Published var tag = "Food" // "Food", "Entertainment", "Travel", etc
     @Published var date = Date()
     @Published var price: Double?
     @Published var numPeople: Int?
@@ -23,7 +26,37 @@ class NewInvoiceItemViewViewModel: ObservableObject {
     }
     
     func save() {
+        guard canSave else {
+            return
+        }
         
+        // Get current user ID
+        guard let uID = Auth.auth().currentUser?.uid else {
+            return
+        }
+        
+        // Create model
+        let newID = UUID().uuidString
+        print("TAG: ", tag)
+        let newInvoiceItem = InvoiceItem(
+            id: newID,
+            title: title,
+            date: date.timeIntervalSince1970,
+            createdDate: Date().timeIntervalSince1970,
+            price: price,
+            numPeople: numPeople,
+            description: description,
+            tag: tag,
+            isSubmitted: false)
+        
+        // Save model
+        let database = Firestore.firestore()
+        
+        database.collection("users")
+            .document(uID)
+            .collection("expenses")
+            .document(newID)
+            .setData(newInvoiceItem.asDict())
     }
     
     var canSave: Bool {

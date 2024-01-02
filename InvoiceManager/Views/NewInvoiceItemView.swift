@@ -20,7 +20,7 @@ struct NewInvoiceItemView: View {
             // New invoice form
             Form {
                 // Title
-                TextField("title", text: $viewModel.title)
+                TextField("location/title", text: $viewModel.title)
                     .font(.custom("Avenir", size: 18))
                     .bold()
                     .autocapitalization(.none)
