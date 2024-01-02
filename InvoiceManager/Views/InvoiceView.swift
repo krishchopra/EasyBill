@@ -6,22 +6,38 @@
 //
 
 import SwiftUI
+import FirebaseFirestoreSwift
 
 struct InvoiceView: View {
-    @StateObject var viewModel = InvoiceViewViewModel()
-    
-    private let userID: String
+    @StateObject var viewModel: InvoiceViewViewModel
+    @FirestoreQuery var items: [InvoiceItem]
     
     init(userID: String) {
-        self.userID = userID
+        self._items = FirestoreQuery(
+            collectionPath: "users/\(userID)/expenses")
+        self._viewModel = StateObject(
+            wrappedValue: InvoiceViewViewModel(userID: userID)
+        )
     }
     
     var body: some View {
         NavigationView {
             VStack {
-                
+                List(items) { item in
+                    InvoiceItemView(item: item)
+                        .swipeActions {
+                            Button {
+                                viewModel.delete(id: item.id)
+                            } label: {
+                                Text("delete")
+                            }
+                            .tint(.red)
+                        }
+                }
+                .listStyle(PlainListStyle())
             }
-            .navigationTitle("Expense List")
+            .padding(.top, 10)
+            .navigationTitle("expense list")
             .toolbar {
                 Button {
                     viewModel.showingNewInvoiceItemView = true
@@ -30,7 +46,7 @@ struct InvoiceView: View {
                 }
             }
             .sheet(isPresented: $viewModel.showingNewInvoiceItemView, content: {
-                NewInvoiceItemView(newInvoiceItemPresented: 
+                NewInvoiceItemView(newInvoiceItemPresented:
                                     $viewModel.showingNewInvoiceItemView)
             })
         }
@@ -39,6 +55,6 @@ struct InvoiceView: View {
 
 struct InvoiceView_Previews: PreviewProvider {
     static var previews: some View {
-        InvoiceView(userID: "")
+        InvoiceView(userID: "i4GxRU60IaRCJUuK7YtsqtQGOIc2")
     }
 }

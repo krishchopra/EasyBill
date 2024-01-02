@@ -25,11 +25,11 @@ struct MainView: View {
         TabView {
             InvoiceView(userID: viewModel.currUserID)
                 .tabItem {
-                    Label("Home", systemImage: "house")
+                    Label("home", systemImage: "house")
                 }
             ProfileView()
                 .tabItem {
-                    Label("Profile", systemImage: "person.circle")
+                    Label("profile", systemImage: "person.circle")
                 }
         }
     }

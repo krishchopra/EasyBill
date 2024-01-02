@@ -13,4 +13,8 @@ class InvoiceItemViewViewModel: ObservableObject {
     init() {
         
     }
+    
+    func toggleIsSubmitted(item: InvoiceItem) {
+        
+    }
 }
