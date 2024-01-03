@@ -37,7 +37,7 @@ struct InvoiceView: View {
                 .listStyle(PlainListStyle())
             }
             .padding(.top, 10)
-            .navigationTitle("expense list")
+            .navigationTitle("Expense List")
             .toolbar {
                 Button {
                     viewModel.showingNewInvoiceItemView = true

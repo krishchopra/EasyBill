@@ -9,13 +9,33 @@ import SwiftUI
 
 struct InvoiceItemView: View {
     @StateObject var viewModel = InvoiceItemViewViewModel()
+    
     let item: InvoiceItem
+    private var p: Double {
+        ((item.price ?? 0.0) * 100).rounded() / 100 / Double(item.numPeople ?? 1)
+    }
+    private var pricePerPerson: String {
+        if (item.numPeople ?? 1) > 1 {
+            return " ($\((p * 100).rounded() / 100) per person)"
+        } else {
+            return ""
+        }
+    }
+    
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
                 Text(item.title)
                     .font(.custom("Avenir", size: 18))
                     .bold()
+                Text("$" + String(((item.price ?? 0.0) * 100).rounded() / 100) + pricePerPerson)
+                    .font(.custom("Avenir", size: 18))
+                    .bold()
+                Text(item.description ?? "")
+                    .font(.custom("Avenir", size: 14))
+                Text("\(item.tag ?? "") for \(item.numPeople ?? 0)")
+                    .font(.custom("Avenir", size: 14))
+                    .italic()
                 Text("\(Date(timeIntervalSince1970: item.date).formatted(date: .complete, time: .omitted))")
                     .font(.custom("Avenir", size: 14))
                     .foregroundColor(Color(.secondaryLabel))

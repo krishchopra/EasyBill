@@ -37,7 +37,6 @@ class NewInvoiceItemViewViewModel: ObservableObject {
         
         // Create model
         let newID = UUID().uuidString
-        print("TAG: ", tag)
         let newInvoiceItem = InvoiceItem(
             id: newID,
             title: title,
@@ -60,7 +59,7 @@ class NewInvoiceItemViewViewModel: ObservableObject {
     }
     
     var canSave: Bool {
-        guard !title.trimmingCharacters(in: .whitespaces).isEmpty, !(price == nil), !(numPeople == nil) else {
+        guard !title.trimmingCharacters(in: .whitespaces).isEmpty, (price ?? 0) > 0, (numPeople ?? 0) >= 1 else {
             return false
         }
         

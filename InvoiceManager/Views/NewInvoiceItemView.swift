@@ -74,7 +74,7 @@ struct NewInvoiceItemView: View {
             .alert(isPresented: $viewModel.showAlert, content: {
                 Alert(
                     title: Text("Error"),
-                    message: Text("Please fill in title, price, and number of people — and ensure that the date is today or in the past.")
+                    message: Text("Please fill in a valid title, price, and number of people — and ensure that the date is today or in the past.")
                 )
             })
         }
