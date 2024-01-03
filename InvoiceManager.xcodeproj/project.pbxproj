@@ -18,7 +18,6 @@
 		716A15842B32C4FA009F4719 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 716A15832B32C4FA009F4719 /* FirebaseAuth */; };
 		716A15862B32C4FA009F4719 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 716A15852B32C4FA009F4719 /* FirebaseFirestore */; };
 		716A15882B32C4FA009F4719 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 716A15872B32C4FA009F4719 /* FirebaseFirestoreSwift */; };
-		716A158A2B32C5B9009F4719 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 716A15892B32C5B9009F4719 /* GoogleService-Info.plist */; };
 		71F7B71C2B40F25200D9BFF7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F7B71B2B40F25200D9BFF7 /* Extensions.swift */; };
 		71F7B71E2B46031800D9BFF7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 71F7B71D2B46031800D9BFF7 /* .gitignore */; };
 		B2A685F42B341AA10027E32C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A685F32B341AA10027E32C /* ProfileView.swift */; };
@@ -69,7 +68,6 @@
 		716A156D2B32C45E009F4719 /* InvoiceManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvoiceManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		716A15712B32C45E009F4719 /* InvoiceManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceManagerUITests.swift; sourceTree = "<group>"; };
 		716A15732B32C45E009F4719 /* InvoiceManagerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceManagerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		716A15892B32C5B9009F4719 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		71F7B71B2B40F25200D9BFF7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		71F7B71D2B46031800D9BFF7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		B2A685F32B341AA10027E32C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -222,7 +220,6 @@
 			children = (
 				716A15592B32C45E009F4719 /* Assets.xcassets */,
 				716A15552B32C45D009F4719 /* InvoiceManagerApp.swift */,
-				716A15892B32C5B9009F4719 /* GoogleService-Info.plist */,
 				71F7B71B2B40F25200D9BFF7 /* Extensions.swift */,
 				B2A686162B41BA920027E32C /* Constants.swift */,
 			);
@@ -346,7 +343,6 @@
 				71F7B71E2B46031800D9BFF7 /* .gitignore in Resources */,
 				716A155E2B32C45E009F4719 /* Preview Assets.xcassets in Resources */,
 				716A155A2B32C45E009F4719 /* Assets.xcassets in Resources */,
-				716A158A2B32C5B9009F4719 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
