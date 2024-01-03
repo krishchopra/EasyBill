@@ -20,6 +20,7 @@
 		716A15882B32C4FA009F4719 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 716A15872B32C4FA009F4719 /* FirebaseFirestoreSwift */; };
 		71F7B71C2B40F25200D9BFF7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F7B71B2B40F25200D9BFF7 /* Extensions.swift */; };
 		71F7B71E2B46031800D9BFF7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 71F7B71D2B46031800D9BFF7 /* .gitignore */; };
+		71F7B7202B4608CD00D9BFF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71F7B71F2B4608CD00D9BFF7 /* GoogleService-Info.plist */; };
 		B2A685F42B341AA10027E32C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A685F32B341AA10027E32C /* ProfileView.swift */; };
 		B2A685F62B341AC60027E32C /* InvoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A685F52B341AC60027E32C /* InvoiceView.swift */; };
 		B2A685F82B341AE00027E32C /* NewInvoiceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A685F72B341AE00027E32C /* NewInvoiceItemView.swift */; };
@@ -70,6 +71,7 @@
 		716A15732B32C45E009F4719 /* InvoiceManagerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceManagerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		71F7B71B2B40F25200D9BFF7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		71F7B71D2B46031800D9BFF7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		71F7B71F2B4608CD00D9BFF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B2A685F32B341AA10027E32C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		B2A685F52B341AC60027E32C /* InvoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceView.swift; sourceTree = "<group>"; };
 		B2A685F72B341AE00027E32C /* NewInvoiceItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInvoiceItemView.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 			children = (
 				716A15592B32C45E009F4719 /* Assets.xcassets */,
 				716A15552B32C45D009F4719 /* InvoiceManagerApp.swift */,
+				71F7B71F2B4608CD00D9BFF7 /* GoogleService-Info.plist */,
 				71F7B71B2B40F25200D9BFF7 /* Extensions.swift */,
 				B2A686162B41BA920027E32C /* Constants.swift */,
 			);
@@ -341,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71F7B71E2B46031800D9BFF7 /* .gitignore in Resources */,
+				71F7B7202B4608CD00D9BFF7 /* GoogleService-Info.plist in Resources */,
 				716A155E2B32C45E009F4719 /* Preview Assets.xcassets in Resources */,
 				716A155A2B32C45E009F4719 /* Assets.xcassets in Resources */,
 			);
