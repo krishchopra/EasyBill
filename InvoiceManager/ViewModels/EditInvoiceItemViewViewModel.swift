@@ -74,8 +74,7 @@ class EditInvoiceItemViewViewModel: ObservableObject {
             price: price,
             numPeople: numPeople,
             description: description,
-            tag: tag,
-            isSubmitted: false
+            tag: tag
         )
         
         // Save updated item in db

@@ -23,6 +23,7 @@
 		71F7B7202B4608CD00D9BFF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71F7B71F2B4608CD00D9BFF7 /* GoogleService-Info.plist */; };
 		71F7B7222B46128300D9BFF7 /* EditInvoiceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F7B7212B46128300D9BFF7 /* EditInvoiceItemView.swift */; };
 		71F7B7242B4612A300D9BFF7 /* EditInvoiceItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F7B7232B4612A300D9BFF7 /* EditInvoiceItemViewViewModel.swift */; };
+		71F7B7262B47614C00D9BFF7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F7B7252B47614C00D9BFF7 /* Launch Screen.storyboard */; };
 		B2A685F42B341AA10027E32C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A685F32B341AA10027E32C /* ProfileView.swift */; };
 		B2A685F62B341AC60027E32C /* InvoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A685F52B341AC60027E32C /* InvoiceView.swift */; };
 		B2A685F82B341AE00027E32C /* NewInvoiceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A685F72B341AE00027E32C /* NewInvoiceItemView.swift */; };
@@ -76,6 +77,7 @@
 		71F7B71F2B4608CD00D9BFF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		71F7B7212B46128300D9BFF7 /* EditInvoiceItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInvoiceItemView.swift; sourceTree = "<group>"; };
 		71F7B7232B4612A300D9BFF7 /* EditInvoiceItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInvoiceItemViewViewModel.swift; sourceTree = "<group>"; };
+		71F7B7252B47614C00D9BFF7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		B2A685F32B341AA10027E32C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		B2A685F52B341AC60027E32C /* InvoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceView.swift; sourceTree = "<group>"; };
 		B2A685F72B341AE00027E32C /* NewInvoiceItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInvoiceItemView.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				71F7B71F2B4608CD00D9BFF7 /* GoogleService-Info.plist */,
 				71F7B71B2B40F25200D9BFF7 /* Extensions.swift */,
 				B2A686162B41BA920027E32C /* Constants.swift */,
+				71F7B7252B47614C00D9BFF7 /* Launch Screen.storyboard */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				71F7B71E2B46031800D9BFF7 /* .gitignore in Resources */,
 				71F7B7202B4608CD00D9BFF7 /* GoogleService-Info.plist in Resources */,
 				716A155E2B32C45E009F4719 /* Preview Assets.xcassets in Resources */,
+				71F7B7262B47614C00D9BFF7 /* Launch Screen.storyboard in Resources */,
 				716A155A2B32C45E009F4719 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -568,6 +572,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -606,6 +611,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

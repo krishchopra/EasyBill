@@ -16,10 +16,10 @@ struct InvoiceItem: Codable, Identifiable {
     let numPeople: Int?
     let description: String?
     let tag: String?
-    var isSubmitted: Bool
+    // var isSubmitted: Bool
     // consider changing to isReimbursed?
     
-    mutating func setDone(_ state: Bool) {
-        isSubmitted = state
-    }
+//    mutating func setDone(_ state: Bool) {
+//        isSubmitted = state
+//    }
 }

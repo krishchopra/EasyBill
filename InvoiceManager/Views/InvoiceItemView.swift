@@ -58,8 +58,7 @@ struct InvoiceItemView_Previews: PreviewProvider {
             price: 45.67,
             numPeople: 3,
             description: "Dinner with Parth and Raj",
-            tag: "Food",
-            isSubmitted: false
+            tag: "Food"
         ))
     }
 }

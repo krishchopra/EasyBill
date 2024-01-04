@@ -45,8 +45,7 @@ class NewInvoiceItemViewViewModel: ObservableObject {
             price: price,
             numPeople: numPeople,
             description: description,
-            tag: tag,
-            isSubmitted: false)
+            tag: tag)
         
         // Save model
         let database = Firestore.firestore()
