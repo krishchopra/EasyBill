@@ -10,6 +10,8 @@ import FirebaseFirestore
 
 class InvoiceViewViewModel: ObservableObject {
     @Published var showingNewInvoiceItemView = false
+    @Published var showingEditInvoiceItemView = false
+    @Published var editedInvoiceItemID: String = ""
     
     private let userID: String
     

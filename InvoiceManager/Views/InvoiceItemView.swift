@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct InvoiceItemView: View {
     @StateObject var viewModel = InvoiceItemViewViewModel()
@@ -42,12 +43,6 @@ struct InvoiceItemView: View {
             }
             
             Spacer()
-            
-            Button {
-                viewModel.toggleIsSubmitted(item: item)
-            } label: {
-                Image(systemName: item.isSubmitted ? "checkmark.square.fill" : "square")
-            }
             
         }
     }

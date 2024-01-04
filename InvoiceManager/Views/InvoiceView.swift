@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import FirebaseFirestoreSwift
+import FirebaseFirestore
 
 struct InvoiceView: View {
     @StateObject var viewModel: InvoiceViewViewModel
@@ -32,6 +32,13 @@ struct InvoiceView: View {
                                 Text("delete")
                             }
                             .tint(.red)
+                            Button {
+                                viewModel.showingEditInvoiceItemView = true
+                                viewModel.editedInvoiceItemID = item.id
+                            } label: {
+                                Text("edit")
+                            }
+                            .tint(.blue)
                         }
                 }
                 .listStyle(PlainListStyle())
@@ -48,6 +55,9 @@ struct InvoiceView: View {
             .sheet(isPresented: $viewModel.showingNewInvoiceItemView, content: {
                 NewInvoiceItemView(newInvoiceItemPresented:
                                     $viewModel.showingNewInvoiceItemView)
+            })
+            .sheet(isPresented: $viewModel.showingEditInvoiceItemView, content: {
+                EditInvoiceItemView(invoiceID: viewModel.editedInvoiceItemID, editedInvoiceItemPresented: $viewModel.showingEditInvoiceItemView)
             })
         }
     }
