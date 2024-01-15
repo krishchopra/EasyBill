@@ -1,5 +1,6 @@
 # Preview of Application
 
+
 ![Screenshot 2024-01-14 at 10 26 13 PM](https://github.com/krishchopra/InvoiceManager/assets/64521969/3d73d475-cee9-4c18-b2ba-3e09b92b974f)
 ![Screenshot 2024-01-13 at 3 49 36 AM](https://github.com/krishchopra/InvoiceManager/assets/64521969/32363251-14cc-4e66-97d1-305ac679abce)
 ![Screenshot 2024-01-14 at 10 26 56 PM](https://github.com/krishchopra/InvoiceManager/assets/64521969/eb494494-6028-45fd-a8b2-7ea0446079a1)
